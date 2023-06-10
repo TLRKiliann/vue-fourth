@@ -1,11 +1,11 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import FirstComp from '../FirstComp.vue'
+import ThirdComp from '../ThirdComp.vue'
 
-describe('HelloWorld', () => {
+describe('ThirdComp', () => {
   it('snapshot UI testing', () => {
-    const wrapper = mount(FirstComp,{});
+    const wrapper = mount(ThirdComp,{});
     expect(wrapper.text()).toMatchSnapshot()
   })
 })

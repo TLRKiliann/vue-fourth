@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PopupComp > snapshot UI testing 1`] = `"My popup"`;
