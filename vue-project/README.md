@@ -29,7 +29,7 @@ To avoid that we use to fix :
 
 ---
 
-## Provide & inject
+## Provide & inject (for e-commerce)
 
 1) Provide the value to the App component
 2) Inject the value to the component ThirdComp
