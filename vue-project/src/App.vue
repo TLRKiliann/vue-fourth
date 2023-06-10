@@ -25,8 +25,8 @@ export default defineComponent({
   <FirstComp id='my-article' title="Esteban in Article" :likes="50" :isPublished="true" />
 
   <div>
-    <button @click="showPopup = true">Shwo my popup</button>
-    <button @click="showPopup = false">Hide my popup</button>
+    <button class="btn-one" @click="showPopup = true">Shwo my popup</button>
+    <button class="btn-two" @click="showPopup = false">Hide my popup</button>
     <PopupComp v-show="showPopup" />
   </div>
 
