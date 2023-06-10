@@ -26,15 +26,18 @@ export default defineComponent({
 
   <div>
     <button @click="showPopup = true">Shwo my popup</button>
+    <button @click="showPopup = false">Hide my popup</button>
     <PopupComp v-show="showPopup" />
   </div>
 
-  <Card></Card>
-  <Card>Header</Card>
-  <Card>Main</Card>
-  <Card>Footer</Card>
+  <div>
+    <Card></Card>
+    <Card>Header</Card>
+    <Card>Main</Card>
+    <Card>Footer</Card>
+  </div>
 
-  <Card class="card-name">
+  <Card>
     <template v-slot:header>
       <h2>Card Header</h2>
     </template>

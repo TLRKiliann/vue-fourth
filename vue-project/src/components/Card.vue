@@ -11,30 +11,32 @@ export default defineComponent({
 </script>
 
 <template>
-    <slot>Default Slot Card</slot>
+    <div class="card--alone">
+      <slot>Default Slot Card</slot>
+    </div>
 
-    <div class="card--header">
-        <slot name="header"></slot>
-    </div>
-    <div class="card--main">
-        <slot name="main"></slot>
-    </div>
-    <div class="card--footer">
-        <slot name="footer"></slot>
+    <div class="maincard--div">
+      <div class="card--header">
+          <slot name="header"></slot>
+      </div>
+      <div class="card--main">
+          <slot name="main"></slot>
+      </div>
+      <div class="card--footer">
+          <slot name="footer"></slot>
+      </div>
     </div>
 </template>
 
 <style scoped>
-.card--header {
-
-  border: 1px solid #fff;
+.card--alone {
+  display: flex;
+  background: blue;
 }
-.card--main {
-
-border: 1px solid #fff;
-}
-.card--footer {
-
-border: 1px solid #fff;
+.maincard--div {
+  display: flex;
+  flex-direction: column;
+  background-color: royalblue;
+  border: 1px solid red;
 }
 </style>
